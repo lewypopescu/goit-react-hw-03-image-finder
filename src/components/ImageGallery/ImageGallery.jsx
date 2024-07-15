@@ -5,6 +5,8 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
 
+import PropTypes from 'prop-types';
+
 import styles from './ImageGallery.module.css';
 
 class ImageGallery extends Component {

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { Audio } from 'react-loader-spinner';
 
+import PropTypes from 'prop-types';
+
 import styles from './Loader.module.css';
 
 class LoaderComponent extends Component {
