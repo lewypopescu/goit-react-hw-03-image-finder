@@ -7,6 +7,8 @@ import ImageGallery from './ImageGallery';
 import LoaderComponent from './Loader';
 import Button from './Button';
 
+import PropTypes from 'prop-types';
+
 import styles from './App.module.css';
 
 const API_KEY = '43911097-2767f3575ad906659ba392cfc';
@@ -78,3 +80,22 @@ export class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  Searchbar: PropTypes.shape({
+    onSubmit: PropTypes.func.isRequired,
+  }),
+  ImageGallery: PropTypes.shape({
+    images: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        largeImageURL: PropTypes.string.isRequired,
+        webformatURL: PropTypes.string.isRequired,
+        tags: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+  }),
+  Button: PropTypes.shape({
+    onClick: PropTypes.func.isRequired,
+  }),
+};
