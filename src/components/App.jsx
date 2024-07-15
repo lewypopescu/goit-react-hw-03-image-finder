@@ -7,6 +7,8 @@ import ImageGallery from './ImageGallery';
 import LoaderComponent from './Loader';
 import Button from './Button';
 
+import styles from './App.module.css';
+
 const API_KEY = '43911097-2767f3575ad906659ba392cfc';
 const PER_PAGE = 12;
 
@@ -65,7 +67,7 @@ export class App extends Component {
     const { images, loading } = this.state;
 
     return (
-      <div className="App">
+      <div className={styles.app}>
         <Searchbar onSubmit={this.handleSearchSubmit} />
         <ImageGallery images={images} />
         {loading && <LoaderComponent />}
