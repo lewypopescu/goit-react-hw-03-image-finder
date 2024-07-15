@@ -65,7 +65,7 @@ export class App extends Component {
     const { images, loading } = this.state;
 
     return (
-      <div>
+      <div className="App">
         <Searchbar onSubmit={this.handleSearchSubmit} />
         <ImageGallery images={images} />
         {loading && <LoaderComponent />}
