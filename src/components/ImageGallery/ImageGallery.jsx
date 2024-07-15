@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
+
 import styles from './ImageGallery.module.css';
 
 class ImageGallery extends Component {
